@@ -3,3 +3,14 @@
 7 -> да
 1 -> нет*/
 
+Console.Write("Введите номер дня недели: ");
+int Week = int.Parse(Console.ReadLine()!);
+if (Week > 0 && Week < 8)
+{
+    string result = (Week == 6 || Week == 7 ? "Выходной" : "Рабочий день");
+    Console.WriteLine(result);
+}
+else
+{
+    Console.WriteLine("Вы ввеи некорректный день недели");
+}
