@@ -7,7 +7,7 @@
 Console.Write("Введите трехзначное число");
 int trio = int.Parse(Console.ReadLine()!);
 string trioString = trio.ToString();
-if (trioString.Length == 3)
+if (trioString.Length >= 3)
 {
     Console.WriteLine(trioString[1]);
 }
